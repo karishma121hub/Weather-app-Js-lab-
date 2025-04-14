@@ -10,15 +10,45 @@
     <div class="container"> 
         <h1>Weather App</h1> 
         <div class="search-box"> 
-        <input type="text" id="city-input" placeholder="Enter city  name"> 
-        <button id="search-btn">Search</button> 
+            <input type="text" id="city-input" placeholder="Enter city name"> 
+            <button id="search-btn">Search</button> 
         </div> 
         <div class="weather-info"> 
-        <p id="city-name"></p> 
-        <p id="temperature"></p> 
-        <p id="weather-description"></p> 
+            <p id="city-name"></p> 
+            <p id="temperature"></p> 
+            <p id="weather-description"></p> 
         </div> 
-        </div> 
+
+        <!-- 3-Day Forecast Section Starts Here -->
+        <div class="forecast"> 
+            <h2>3-Day Weather Forecast</h2> 
+            <div class="forecast-days"> 
+                <!-- Example static day cards (replace with dynamic JS later) -->
+                <div class="day-card"> 
+                    <div class="day-date">Monday, May 25</div> 
+                    <div class="day-weather-icon"><img src="partlycloud.png" alt="Weather Icon"></div> 
+                    <div class="day-temperature">25°C</div> 
+                    <div class="day-description">Partly Cloudy</div> 
+                </div> 
+
+                <div class="day-card"> 
+                    <div class="day-date">Tuesday, May 26</div> 
+                    <div class="day-weather-icon"><img src="sunny.png" alt="Weather Icon"></div> 
+                    <div class="day-temperature">28°C</div> 
+                    <div class="day-description">Sunny</div> 
+                </div> 
+
+                <div class="day-card"> 
+                    <div class="day-date">Wednesday, May 27</div> 
+                    <div class="day-weather-icon"><img src="rainy.png" alt="Weather Icon"></div> 
+                    <div class="day-temperature">23°C</div> 
+                    <div class="day-description">Rainy</div> 
+                </div> 
+            </div> 
+        </div>
+        <!-- 3-Day Forecast Section Ends Here -->
+
+    </div> 
 <script src="app.js"></script>
 </body>
 </html>
